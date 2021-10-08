@@ -11,7 +11,11 @@ a.navbar-brand {
 a {
   color: #0366d6;
 }
-
+img.image {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;

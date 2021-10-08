@@ -33,4 +33,16 @@ project steps:
 -Examine the database.//can't find soap table:(
 -Create a new class named SeedData in the Models folder and seed the database with 10 records.
 -Add the seed initializer in  Program.cs .
-
+(Part6 of the toturial)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2021-10-08 9:38Am
+- Change the display name to some atribute in soap.cs ,also adding data annotation to the price.
+- Review Views/Soaps/Index.cshtml file.
+- make changes in view/soaps/ pages to remove the colomn of image url and just diplay the image in details.
+(Part7 of the toturial)
+2021-10-08 11:16am
+-Updating the Index method found inside Controllers/MoviesController.cs .
+-Opening the Views/Movies/Index.cshtml file, and adding the <form> markup.
+-Adding the following SoapMainIngredientViewModel class to the Models folder to search by main ingredient of the soap
+-Update Index.cshtml found in Views/Movies/ to Add search by main ingredient to the Index view
+(Part 8 of the toturial)

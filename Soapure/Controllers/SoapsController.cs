@@ -20,9 +20,28 @@ namespace Soapure.Controllers
         }
 
         // GET: Soaps
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string soapMainIngredient, string searchString)
         {
-            return View(await _context.Soap.ToListAsync());
+            IQueryable<string> mainIngredientQuery = from m in _context.Soap
+                                                     orderby m.MainIngredient
+                                                     select m.MainIngredient;
+            var soaps = from m in _context.Soap
+                        select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                soaps = soaps.Where(s => s.ProductName.Contains(searchString));
+            }
+            if (!string.IsNullOrEmpty(soapMainIngredient))
+            {
+                soaps = soaps.Where(x => x.MainIngredient == soapMainIngredient);
+            }
+            var soapMainIngredientVM = new SoapMainIngredientViewModel
+            {
+                MainIngredient = new SelectList(await mainIngredientQuery.Distinct().ToListAsync()),
+                Soaps = await soaps.ToListAsync()
+
+             };
+            return View(soapMainIngredientVM);
         }
 
         // GET: Soaps/Details/5
