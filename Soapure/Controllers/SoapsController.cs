@@ -73,7 +73,7 @@ namespace Soapure.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ProductName,MainIngredient,Color,Price,ImageUrl")] Soap soap)
+        public async Task<IActionResult> Create([Bind("Id,ProductName,MainIngredient,Color,Price,ImageUrl,Rating")] Soap soap)
         {
             if (ModelState.IsValid)
             {
@@ -105,7 +105,7 @@ namespace Soapure.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ProductName,MainIngredient,Color,Price,ImageUrl")] Soap soap)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ProductName,MainIngredient,Color,Price,ImageUrl,Rating")] Soap soap)
         {
             if (id != soap.Id)
             {

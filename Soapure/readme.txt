@@ -46,3 +46,7 @@ project steps:
 -Adding the following SoapMainIngredientViewModel class to the Models folder to search by main ingredient of the soap
 -Update Index.cshtml found in Views/Movies/ to Add search by main ingredient to the Index view
 (Part 8 of the toturial)
+-Add a Rating Property to the Soap Model in  Models/Soap.cs.
+-update the [Bind] attribute for both the Create and Edit action methods to include the Rating property in SoapsController.cs.
+-Edit the /Views/Soaps/Index.cshtml file and add a Rating field.
+Update the /Views/Soaps/Create.cshtml with a Rating field.

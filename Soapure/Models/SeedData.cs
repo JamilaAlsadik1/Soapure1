@@ -27,7 +27,8 @@ namespace Soapure.Models
                         MainIngredient= "Cranberry and almond",
                         Color= "red",
                         Price=17.00M,
-                        ImageUrl= "~/img/cranberry.jpg"
+                        ImageUrl= "~/img/cranberry.jpg",
+                        Rating= 4
                     },
                     new Soap
                     {
@@ -35,7 +36,9 @@ namespace Soapure.Models
                         MainIngredient = "Kale and basil ",
                         Color = "Green",
                         Price = 13.00M,
-                        ImageUrl = "~/img/kale.jpg"
+                        ImageUrl = "~/img/kale.jpg",
+                        Rating=3
+                     
                     },
                     new Soap
                     {
@@ -43,7 +46,8 @@ namespace Soapure.Models
                         MainIngredient = "Honey, Oats and Cocoa",
                         Color = "cream",
                         Price = 10.00M,
-                        ImageUrl = "~/img/honey.jpg"
+                        ImageUrl = "~/img/honey.jpg",
+                        Rating=5
                     },
                     new Soap
                     {
@@ -51,7 +55,8 @@ namespace Soapure.Models
                         MainIngredient = "Fennel and Charcoal",
                         Color = "Marble ",
                         Price = 6.95M,
-                        ImageUrl = "~/img/fennel.jpg"
+                        ImageUrl = "~/img/fennel.jpg",
+                        Rating=4
                     },
                     new Soap
                     {
@@ -59,7 +64,8 @@ namespace Soapure.Models
                         MainIngredient = "Cinnamon and Sweet orange ",
                         Color = "Brown and cream",
                         Price =8.95M,
-                        ImageUrl = "~/img/cinnamon.jpg"
+                        ImageUrl = "~/img/cinnamon.jpg",
+                        Rating=4
                     },
                      new Soap
                      {
@@ -67,7 +73,9 @@ namespace Soapure.Models
                          MainIngredient = "Squash",
                          Color = "orange",
                          Price = 10.95M,
-                         ImageUrl = "~/img/squash.jpg"
+                         ImageUrl = "~/img/squash.jpg",
+                         Rating=3
+                         
                      },
                       new Soap
                       {
@@ -75,7 +83,8 @@ namespace Soapure.Models
                           MainIngredient = "Rosemary and maple ",
                           Color = "Brown",
                           Price = 12.95M,
-                          ImageUrl = "~/img/rosemary.jpg"
+                          ImageUrl = "~/img/rosemary.jpg",
+                          Rating=5
                       },
                        new Soap
                        {
@@ -83,7 +92,8 @@ namespace Soapure.Models
                            MainIngredient = "Orange ",
                            Color = "Orange ",
                            Price = 5.95M,
-                           ImageUrl = "~/img/orange.jpg"
+                           ImageUrl = "~/img/orange.jpg",
+                           Rating=5
                        },
                         new Soap
                         {
@@ -91,7 +101,8 @@ namespace Soapure.Models
                             MainIngredient = "Pumpkin ",
                             Color = "Light orange",
                             Price = 8.95M,
-                            ImageUrl = "~/img/pumpkin.jpg"
+                            ImageUrl = "~/img/pumpkin.jpg",
+                            Rating=5
                         },
                          new Soap
                          {
@@ -99,7 +110,8 @@ namespace Soapure.Models
                              MainIngredient = "Aloe and peppermint ",
                              Color = "cream",
                              Price = 4.95M,
-                             ImageUrl = "~/img/aloe.jpg"
+                             ImageUrl = "~/img/aloe.jpg",
+                             Rating=4
                          }
 
 
