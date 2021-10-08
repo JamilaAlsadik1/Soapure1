@@ -50,3 +50,6 @@ project steps:
 -update the [Bind] attribute for both the Create and Edit action methods to include the Rating property in SoapsController.cs.
 -Edit the /Views/Soaps/Index.cshtml file and add a Rating field.
 Update the /Views/Soaps/Create.cshtml with a Rating field.
+-Failed to migrat ->used Update-Database -Context SoapureContext and add-migration Rating -Context SoapureContext to solve it 
+(Part9 of the toturial)
+-adding validation rules to the soap model
