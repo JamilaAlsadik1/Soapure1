@@ -2,15 +2,18 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+  
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
+
 
 /* Provide sufficient contrast against white background */
 a {
     color: #03d6a5;
 }
+    
 h1{
     color:navy;
     font-size:36px;
@@ -33,7 +36,7 @@ p:first-of-type{
 .btn-primary {
     color: #fff;
     background-color: #1bb7c2;
-    border-color:#1861ac;
+    border-color: #1861ac;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -90,6 +93,7 @@ body {
     font-family: 'Andada Pro', serif;
    
 }
+
 .footer {
   position: absolute;
   bottom: 0;

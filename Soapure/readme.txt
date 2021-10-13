@@ -57,4 +57,9 @@ Update the /Views/Soaps/Create.cshtml with a Rating field.
 2021-10-12 9:52pm
 - adding some content in about us and main page.
 -adding some styles to the pages.
-
+- change the header layout from _Layout.cshtml by making 
+-Change the link for the website name to be linked to the home page not to the product table
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+2021-10-13 9:29Am
+- trying to add style to website name.
+- I've added an inline style to the website name because it was the only way that's work.

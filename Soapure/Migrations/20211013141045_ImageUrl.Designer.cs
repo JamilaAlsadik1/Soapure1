@@ -9,7 +9,7 @@ using Soapure.Data;
 namespace Soapure.Migrations
 {
     [DbContext(typeof(SoapureContext))]
-    [Migration("20211013020644_ImageUrl")]
+    [Migration("20211013141045_ImageUrl")]
     partial class ImageUrl
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
