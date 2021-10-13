@@ -63,3 +63,4 @@ Update the /Views/Soaps/Create.cshtml with a Rating field.
 2021-10-13 9:29Am
 - trying to add style to website name.
 - I've added an inline style to the website name because it was the only way that's work.
+- When I try to open it in new device , I have to update database and aply migration ->used Update-Database -Context SoapureContext and add-migration  -Context SoapureContext to solve it 
