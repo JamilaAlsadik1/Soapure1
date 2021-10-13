@@ -22,14 +22,15 @@ namespace Soapure.Controllers
         // GET: Soaps
         public async Task<IActionResult> Index(string soapMainIngredient, string searchString)
         {
+            // LINQ query that retrieves all the main ingredient from the database.
             IQueryable<string> mainIngredientQuery = from m in _context.Soap
                                                      orderby m.MainIngredient
                                                      select m.MainIngredient;
-            var soaps = from m in _context.Soap
+            var soaps = from m in _context.Soap //creates a LINQ query to select the Soaps
                         select m;
             if (!String.IsNullOrEmpty(searchString))
             {
-                soaps = soaps.Where(s => s.ProductName.Contains(searchString));
+                soaps = soaps.Where(s => s.ProductName.Contains(searchString));//the soaps query is modified to filter on the value of the search string:
             }
             if (!string.IsNullOrEmpty(soapMainIngredient))
             {
@@ -73,6 +74,7 @@ namespace Soapure.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        //updating bind attribute to include Rating
         public async Task<IActionResult> Create([Bind("Id,ProductName,MainIngredient,Color,Price,ImageUrl,Rating")] Soap soap)
         {
             if (ModelState.IsValid)
@@ -105,7 +107,8 @@ namespace Soapure.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ProductName,MainIngredient,Color,Price,ImageUrl,Rating")] Soap soap)
+        //updating bind attribute to include Rating
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ProductName,MainIngredient,Color,Price,ImageUrl,Rating")] Soap soap) 
         {
             if (id != soap.Id)
             {

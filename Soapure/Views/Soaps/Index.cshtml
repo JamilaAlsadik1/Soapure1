@@ -9,17 +9,20 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+@*adding the <form> markup*@
 <form asp-controller="Soaps" asp-action="Index" method="get">
+
     <p>
         <select asp-for="SoapMainIngredient" asp-items="Model.MainIngredient">
             <option value="">All</option>
         </select>
-        Product Name: <input type="text" name="searchString"/>
-        <input type="submit" value="Filter"/>
+        Product Name: <input type="text" name="searchString" />
+        <input type="submit" value="Filter" />
     </p>
 </form>
 <table class="table">
     <thead>
+        @*removing ImageUrl from the index file and just display it in datail and edit*@
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Soaps[0].ProductName)
@@ -40,29 +43,30 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Soaps) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProductName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MainIngredient)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Color)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-           <td>
-                @Html.DisplayFor(modelItem => item.Rating)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Soaps)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MainIngredient)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Color)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rating)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

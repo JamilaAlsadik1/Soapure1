@@ -11,7 +11,7 @@ namespace Soapure.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View();//modify the HelloWorldController class to use Razor view files
         }
 
         // 
@@ -19,7 +19,7 @@ namespace Soapure.Controllers
 
         // GET: /HelloWorld/Welcome/ 
         // Requires using System.Text.Encodings.Web;
-        public IActionResult Welcome(string name, int numTimes = 1)
+        public IActionResult Welcome(string name, int numTimes = 1)//changing the Welcome method to add a Message and NumTimes value to the ViewData dictionary
         {
             ViewData["Message"] = "Hello " + name;
             ViewData["NumTimes"] = numTimes;

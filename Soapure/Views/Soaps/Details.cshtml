@@ -34,6 +34,7 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Price)
         </dd>
+        @*adding Rating field*@
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Rating)
         </dt>
@@ -44,7 +45,7 @@
             @Html.DisplayNameFor(model => model.ImageUrl)
         </dt>
         <dd class="col-sm-10">
-            <img class="image"  src="@Url.Content(Model.ImageUrl)" />
+            <img class="image" src="@Url.Content(Model.ImageUrl)" />
         </dd>
     </dl>
 </div>

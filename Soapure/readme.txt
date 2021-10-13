@@ -8,7 +8,7 @@ project steps:
 - start to build my web app with individual user acounts autherntication and configure for https.
 - adding helloWorldController.
 - modify the HelloWorldController class to use Razor view files.
--modify Views/shared/_Layout.cshtml and add the website in the left side of the navigation bar + adding "our soaps" to the navigation bar to explore the products.
+-modify Views/shared/_Layout.cshtml and add the website in the left side of the navigation bar + adding "our product" to the navigation bar to explore the products.
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 2021-10-04  1:32pm
 -Examine the Views/_ViewStart.cshtml file
@@ -20,7 +20,7 @@ project steps:
 -reviewing HelloWorldController.cs and changing the Welcome method to add a Message and NumTimes value to the ViewData dictionary.
 -Creating a Welcome view template named Views/HelloWorld/Welcome.cshtml that create a loop in the Welcome.cshtml view template that displays "Hello" NumTimes. 
 (part 4 of the toturial)
-- add a model class and name it Soap.cs and adding five attributes(Id, ProductName,MainIngredient,Color, Price,Rate).
+- add a model class and name it Soap.cs and adding five attributes(Id, ProductName,MainIngredient,Color, Price,ImageUrl).
 -Adding NuGet packages.
 -Scaffolding soap pages.
 -Examine the generated database context class and registration.
@@ -30,7 +30,6 @@ project steps:
 -Examine the Migrations/{timestamp}_InitialCreate.cs migration file.
 - logging sql statment in appsettings.development.json.
 (part5 of the toturial)
--Examine the database.//can't find soap table:(
 -Create a new class named SeedData in the Models folder and seed the database with 10 records.
 -Add the seed initializer in  Program.cs .
 (Part6 of the toturial)
@@ -41,10 +40,10 @@ project steps:
 - make changes in view/soaps/ pages to remove the colomn of image url and just diplay the image in details.
 (Part7 of the toturial)
 2021-10-08 11:16am
--Updating the Index method found inside Controllers/MoviesController.cs .
--Opening the Views/Movies/Index.cshtml file, and adding the <form> markup.
+-Updating the Index method found inside Controllers/SoapsController.cs .
+-Opening the Views/Soaps/Index.cshtml file, and adding the <form> markup.
 -Adding the following SoapMainIngredientViewModel class to the Models folder to search by main ingredient of the soap
--Update Index.cshtml found in Views/Movies/ to Add search by main ingredient to the Index view
+-Update Index.cshtml found in Views/Soaps/ to Add search by main ingredient to the Index view
 (Part 8 of the toturial)
 -Add a Rating Property to the Soap Model in  Models/Soap.cs.
 -update the [Bind] attribute for both the Create and Edit action methods to include the Rating property in SoapsController.cs.
@@ -63,3 +62,17 @@ Update the /Views/Soaps/Create.cshtml with a Rating field.
 2021-10-13 9:29Am
 - trying to add style to website name.
 - I've added an inline style to the website name because it was the only way that's work.
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+-publish it in Azure
+-https://soapure.azurewebsites.net azure link
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+2021-10-13 9:13pm
+-Adding main readMe to github
+=======
+- When I try to open it in new device , I have to update database and aply migration ->used Update-Database -Context SoapureContext and add-migration  -Context SoapureContext to solve it 
+>>>>>>> b0e186c8aeb294806ce821119b76ff9e4a80ba76
+=======
+- When I try to open it in new device , I have to update database and aply migration ->used Update-Database -Context SoapureContext and add-migration  -Context SoapureContext to solve it 
+>>>>>>> b0e186c8aeb294806ce821119b76ff9e4a80ba76
