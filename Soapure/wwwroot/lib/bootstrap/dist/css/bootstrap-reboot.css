@@ -12,7 +12,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -30,7 +30,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: lightgoldenrodyellow;
 }
 
 [tabindex="-1"]:focus {
@@ -123,13 +123,13 @@ sup {
 }
 
 a {
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
+    color: #00ffd0;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 a:hover {
-  color: #0056b3;
+  color: darkred;
   text-decoration: underline;
 }
 
@@ -151,8 +151,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif font-size: 1em;
 }
 
 pre {
@@ -177,6 +176,7 @@ svg {
 
 table {
   border-collapse: collapse;
+  
 }
 
 caption {

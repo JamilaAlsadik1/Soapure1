@@ -53,3 +53,8 @@ Update the /Views/Soaps/Create.cshtml with a Rating field.
 -Failed to migrat ->used Update-Database -Context SoapureContext and add-migration Rating -Context SoapureContext to solve it 
 (Part9 of the toturial)
 -adding validation rules to the soap model
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+2021-10-12 9:52pm
+- adding some content in about us and main page.
+-adding some styles to the pages.
+
