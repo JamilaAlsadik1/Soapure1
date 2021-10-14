@@ -76,3 +76,4 @@ Update the /Views/Soaps/Create.cshtml with a Rating field.
 =======
 - When I try to open it in new device , I have to update database and aply migration ->used Update-Database -Context SoapureContext and add-migration  -Context SoapureContext to solve it 
 >>>>>>> b0e186c8aeb294806ce821119b76ff9e4a80ba76
+- When I try to open it in new device , I have to update database and aply migration ->used Update-Database -Context SoapureContext and add-migration  -Context SoapureContext to solve it 
