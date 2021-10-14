@@ -17,6 +17,7 @@ Program : Visual Studio 2019 - ASP.NET Core web application
 Azure Link: https://soapure.azurewebsites.net 
 ====================================================================================================================
 Important: to update database in new device use:
+
 Update-Database -Context SoapureContext
 ====================================================================================================================
 Soapure is an essential handmade soap produced with natural ingredients by real people.
