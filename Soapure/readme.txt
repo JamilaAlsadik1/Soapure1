@@ -62,18 +62,10 @@ Update the /Views/Soaps/Create.cshtml with a Rating field.
 2021-10-13 9:29Am
 - trying to add style to website name.
 - I've added an inline style to the website name because it was the only way that's work.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 -publish it in Azure
+- When I try to open it in new device , I have to update database and aply migration ->used Update-Database -Context SoapureContext and add-migration  -Context SoapureContext to solve it 
 -https://soapure.azurewebsites.net azure link
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 2021-10-13 9:13pm
 -Adding main readMe to github
-=======
-- When I try to open it in new device , I have to update database and aply migration ->used Update-Database -Context SoapureContext and add-migration  -Context SoapureContext to solve it 
->>>>>>> b0e186c8aeb294806ce821119b76ff9e4a80ba76
-=======
-- When I try to open it in new device , I have to update database and aply migration ->used Update-Database -Context SoapureContext and add-migration  -Context SoapureContext to solve it 
->>>>>>> b0e186c8aeb294806ce821119b76ff9e4a80ba76
-- When I try to open it in new device , I have to update database and aply migration ->used Update-Database -Context SoapureContext and add-migration  -Context SoapureContext to solve it 
+
